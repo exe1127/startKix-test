@@ -19,5 +19,12 @@
   "homepage": "https://github.com/exe1127/startKix-test#readme",
   "devDependencies": {
     "codeceptjs": "^3.3.5"
+  },
+  "dependencies": {
+    "@codeceptjs/configure": "^0.8.0",
+    "@codeceptjs/examples": "^1.2.1",
+    "@codeceptjs/ui": "^0.4.7",
+    "allure-commandline": "^2.18.1",
+    "rimraf": "^3.0.2"
   }
 }
