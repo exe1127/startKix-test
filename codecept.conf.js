@@ -4,9 +4,14 @@ exports.config = {
   output: './output',
   helpers: {
     Appium: {
-      app: 'http://localhost',
+      app:__dirname + '/app/StarKix.apk',
       platform: 'Android',
-      device: 'emulator-5554'
+      device: 'emulator-5554',
+      desiredCapabilities: {
+        automationName: 'UiAutomator2',
+        appPackage: 'com.starkixltd',  // Package name of your app
+        appActivity: 'com.starkixltd.MainActivity', // App activity of the app
+      }
     }
   },
   include: {
