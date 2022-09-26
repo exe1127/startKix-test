@@ -1,11 +1,14 @@
 const { default: $ } = require("webdriverio/build/commands/browser/$");
 
 Feature('login');
-
-/* Scenario('test login', ({ I }) => {
+const loginInit = function (I) {
     I.wait(10);
     I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.Button' })
     I.wait(2);
+}
+
+/* Scenario('test login', ({ I }) => {
+    loginInit(I);
     I.fillField('#email', 'aaa');
     I.wait(2);
     I.fillField('#password', 'aaa');
@@ -13,23 +16,14 @@ Feature('login');
     I.tap({ xpath: '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.Button' })
     I.wait(5);
 
-});
- */
+}); */
 
-/* Scenario('test sign up',  ({ I }) => {
-    I.wait(10);
-    I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.Button' })
-    I.wait(2);
-    
-    //I.fillField('#email', 'aaa');
-    //I.wait(2);
-    //I.fillField('#password', 'aaa');
-    //I.wait(2);
-    //I.tap({ xpath: '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.Button' })
-    //I.wait(5);
+
+Scenario('test sign up',  ({ I }) => {
+    loginInit(I);
 
 });
- */
+
 
 
 
@@ -48,9 +42,7 @@ Feature('login');
 
 
 /* Scenario('test Skip- search participant', ({ I }) => {
-    I.wait(10);
-    I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView' })
-    I.wait(1);
+   
     I.tap('#com.android.permissioncontroller:id/permission_deny_button');
     I.tap('#com.android.permissioncontroller:id/permission_deny_button');
     I.tap('#com.android.permissioncontroller:id/permission_deny_button');
@@ -95,12 +87,3 @@ Feature('login');
 
 }) */
 
-Scenario('test apply as a star', async ({ I }) => {
-    I.wait(10);
-    I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.Button' })
-    I.wait(2);
-    
-    I.wait(5);
-    //I.tap({ xpath:'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[6]'})
-    //I.tap({ xpath:'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]'})
-})
