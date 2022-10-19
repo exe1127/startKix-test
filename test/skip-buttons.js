@@ -1,6 +1,6 @@
-const skipinit = require("./function");
-const nextSkipping = require("./function");
-const endSikp = require("./function");
+const skipinit = require("../function/init-function");
+const nextSkipping = require("../function/init-function");
+const endSikp = require("../function/init-function");
 
 Scenario('test Skip- buttons', ({ I }) => {
     skipinit(I);

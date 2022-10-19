@@ -1,4 +1,4 @@
-const loginInit = require("./function");
+const loginInit = require("../function/init-function");
 
  Scenario('test sign up', ({ I }) => {
     loginInit(I);

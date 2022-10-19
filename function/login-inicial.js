@@ -1,10 +1,6 @@
-const { sendKeys } = require("wd/lib/element-commands");
-const { default: $ } = require("webdriverio/build/commands/browser/$");
-const login = require("./function/login-inicial");
+const loginInit =require('./init-function');
 
-Feature('login');
-
-/* const login = (I) => {
+const login = (I) => {
     loginInit(I);
     I.fillField('#email', 'veronica1@nonerds.com');
     I.wait(2);
@@ -17,10 +13,7 @@ Feature('login');
     I.tap("#com.android.permissioncontroller:id/permission_allow_foreground_only_button");
     I.wait(2);
     I.tap("#com.android.permissioncontroller:id/permission_allow_button");
-    I.wait(5);
-} */
+    I.wait(2);
+}
 
-Scenario('test login "real account-vero"', ({ I }) => {
-    login(I);
-});
-
+module.exports = login
