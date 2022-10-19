@@ -2,6 +2,7 @@ const { sendKeys } = require("wd/lib/element-commands");
 const { default: $ } = require("webdriverio/build/commands/browser/$");
 
 Feature('login');
+
 const loginInit = (I) => {
     I.wait(10);
     I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.Button' });
@@ -99,13 +100,19 @@ const endSikp = (I) => {
     endSikp(I);
 }) */
 
-Scenario('test login "real account"', ({ I }) => {
+Scenario('test login "real account-vero"', ({ I }) => {
     loginInit(I);
     I.fillField('#email', 'veronica1@nonerds.com');
     I.wait(2);
     I.fillField('#password', 'Testtest2');
     I.wait(2);
     I.tap({ xpath: '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.Button' })
+    I.wait(5);
+    I.tap("#com.android.permissioncontroller:id/permission_allow_foreground_only_button");
+    I.wait(2);
+    I.tap("#com.android.permissioncontroller:id/permission_allow_foreground_only_button");
+    I.wait(2);
+    I.tap("#com.android.permissioncontroller:id/permission_allow_button");
     I.wait(5);
     pause();
 });
