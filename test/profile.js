@@ -1,6 +1,8 @@
 const login = require("../function/login-inicial");
 const myProfile = require("../function/profile-option");
 const myCollection = require("../function/myCollection");
+const myOrders = require("../function/myOrders");
+const suport = require("../function/suport");
 Feature('options profiles')
 Scenario('test profiles', ({ I }) => {
     login(I);
@@ -9,6 +11,7 @@ Scenario('test profiles', ({ I }) => {
     I.wait(2);
     // myProfile(I);
     // myCollection(I);
-    
+    // myOrders(I);
+    // suport(I);
     pause();
 })
