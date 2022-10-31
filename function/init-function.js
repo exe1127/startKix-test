@@ -4,8 +4,8 @@ const loginInit = (I) => {
     I.wait(2);
 }
 const skipInit = (I) => {
-    I.wait(10);
-    I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView' });
+    I.wait(5);
+    I.tap({ xpath: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]' });
     I.wait(2);
 }
 
@@ -21,4 +21,4 @@ const endSikp = (I) => {
     I.wait(1);
 }
 
-module.exports =loginInit,skipInit, nextSkipping, endSikp
+module.exports = {loginInit, skipInit, nextSkipping, endSikp}

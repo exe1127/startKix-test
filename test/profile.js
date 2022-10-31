@@ -3,6 +3,7 @@ const myProfile = require("../function/profile-option");
 const myCollection = require("../function/myCollection");
 const myOrders = require("../function/myOrders");
 const suport = require("../function/suport");
+const settings = require("../function/settings");
 Feature('options profiles')
 Scenario('test profiles', ({ I }) => {
     login(I);
@@ -13,5 +14,6 @@ Scenario('test profiles', ({ I }) => {
     // myCollection(I);
     // myOrders(I);
     // suport(I);
+    // settings(I);
     pause();
 })

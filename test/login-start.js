@@ -1,6 +1,6 @@
 const login = require("../function/login-inicial");
 
-Feature('options in login')
+Feature('options in login');
 Scenario('test Skip- search participant', ({ I }) => {
     login(I);
     I.tap('~LiveQueue, tab, 2 of 4');
