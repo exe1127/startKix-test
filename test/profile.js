@@ -1,9 +1,10 @@
 const login = require("../function/login-inicial");
-const myProfile = require("../function/profile-option");
+const { myProfile, myCollection, myOrders, suport, settings } = require("../function/profile-option")
+/* const myProfile = require("../function/profile-option");
 const myCollection = require("../function/myCollection");
 const myOrders = require("../function/myOrders");
 const suport = require("../function/suport");
-const settings = require("../function/settings");
+const settings = require("../function/settings"); */
 Feature('options profiles')
 Scenario('test profiles', ({ I }) => {
     login(I);

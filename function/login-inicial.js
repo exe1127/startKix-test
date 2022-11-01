@@ -1,4 +1,4 @@
-const loginInit =require('./init-function');
+const { loginInit } = require('./init-function');
 
 const login = (I) => {
     loginInit(I);
