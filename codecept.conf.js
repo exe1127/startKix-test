@@ -4,7 +4,7 @@ exports.config = {
   output: './output',
   helpers: {
     Appium: {
-      app: __dirname + '/app/StarKix.apk',
+      // app: __dirname + '/app/StarKix.apk',
       platform: 'Android',
       device: 'emulator-5554',
       desiredCapabilities: {
