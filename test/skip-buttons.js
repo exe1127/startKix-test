@@ -4,6 +4,7 @@ Feature('Skip- buttons');
 Scenario('test Skip- buttons', ({ I }) => {
     skipInit(I);
     nextSkipping(I);
+    I.wait(2);
     I.tap('~LiveQueue, tab, 2 of 4');
     endSikp(I);
     I.tap('~Favourite, tab, 3 of 4');
